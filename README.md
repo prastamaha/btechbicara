@@ -450,6 +450,14 @@ You can make it using horizon or using cli with the following ways
 
 [Resource Cli Step](https://github.com/prastamaha/openstack-resource.git) 
 
+## Octavia Flavor
+
+- [Octavia Flavor](scenarios/flavor.md)
+
+## Octavia Availability zone
+
+- [Octavia Availability zone](scenarios/availabilityzone.md)
+
 ## Load Balancer scenarios
 - [Basic Http](scenarios/basic-http.md)
 - [TLS Termination](scenarios/tls-termination.md)

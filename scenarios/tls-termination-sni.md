@@ -1,4 +1,4 @@
-# Configure Octavia Loadbalancer for Using TLS Termination
+# TLS Termination with SNI Scenario
 
 This example is exactly like [TLS Termination](tls-termination.md), except that we have multiple TLS certificates that we would like to use on the same listener using Server Name Indication (SNI) technology.
 
@@ -47,7 +47,7 @@ enable_barbican=yes
 
 Deploy barbican
 ```
-source ~/kolla-install/bin/activate
+source ~/kolla-venv/bin/activate
 kolla-ansible deploy -t barbican
 ```
 Install Barbican client command

@@ -1,4 +1,4 @@
-# Configure Octavia Loadbalancer for Using TLS Termination
+# TLS Termination Scenario
 
 ## Certificate
 
@@ -37,7 +37,7 @@ enable_barbican=yes
 
 Deploy barbican
 ```
-source ~/kolla-install/bin/activate
+source ~/kolla-venv/bin/activate
 kolla-ansible deploy -t barbican
 ```
 Install Barbican client command

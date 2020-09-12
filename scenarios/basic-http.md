@@ -1,4 +1,4 @@
-# Configure Octavia Loadbalancer Basic HTTP
+# Basic HTTP Scenario
 
 ## Configuration Step
 
@@ -20,7 +20,7 @@ openstack server list
 
 ### source user openrc file
 ```
-source ~/kolla-install/bin/activate
+source ~/kolla-venv/bin/activate
 source /etc/kolla/admin-openrc.sh
 ```
 
