@@ -11,6 +11,9 @@ This tutorial using **Ussuri** release version on ubuntu 18.04 LTS
 - 2 interfaces on each node (mgmt network and external network)
 - Internet access on both network
 
+### Topology
+![topology](images/topology.png)
+
 ### Note
 - Run command below using regular user
 - Run command below only on deployer node
