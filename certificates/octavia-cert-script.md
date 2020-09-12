@@ -12,7 +12,7 @@ source: [docs](https://github.com/99cloud/lab-openstack/blob/master/doc/installa
 
 ```
 cd ~
-git clone https://opendev.org/openstack/octavia -b stable/train
+git clone https://opendev.org/openstack/octavia -b stable/ussuri
 cd octavia/bin
 ```
 
