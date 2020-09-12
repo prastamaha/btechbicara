@@ -198,8 +198,8 @@ sudo nano /etc/kolla/octavia-openrc.sh
 for key in $( set | awk '{FS="="}  /^OS_/ {print $1}' ); do unset $key ; done
 export OS_PROJECT_DOMAIN_NAME=Default
 export OS_USER_DOMAIN_NAME=Default
-export OS_PROJECT_NAME=admin
-export OS_TENANT_NAME=admin
+export OS_PROJECT_NAME=service
+export OS_TENANT_NAME=service
 export OS_USERNAME=octavia
 export OS_PASSWORD=<octavia_keystone_password>
 export OS_AUTH_URL=http://10.10.150.11:35357/v3
