@@ -19,9 +19,9 @@ openstack flavor list
 +--------------------------------------+--------+------+------+-----------+-------+-----------+
 | ID                                   | Name   |  RAM | Disk | Ephemeral | VCPUs | Is Public |
 +--------------------------------------+--------+------+------+-----------+-------+-----------+
-| 320e80ee-0d66-43db-82f3-a8c0376faf30 | large  | 2048 |   20 |         0 |     4 | True      |
-| c7dab6de-9fd1-44fc-88b5-130fa29c26b2 | medium | 1024 |   10 |         0 |     2 | True      |
-| e65c460b-546e-4b0b-9dfd-38882d860d36 | small  |  512 |    5 |         0 |     1 | True      |
+| 320e80ee-0d66-43db-82f3-a8c0376faf30 | large  | 4096 |   20 |         0 |     4 | True      |
+| c7dab6de-9fd1-44fc-88b5-130fa29c26b2 | medium | 2048 |   10 |         0 |     2 | True      |
+| e65c460b-546e-4b0b-9dfd-38882d860d36 | small  | 1024 |    8 |         0 |     1 | True      |
 +--------------------------------------+--------+------+------+-----------+-------+-----------+
 ```
 
@@ -45,16 +45,16 @@ openstack loadbalancer flavorprofile create --name fp.active_standby.large --pro
 
 SINGLE Mode
 ```
-openstack loadbalancer flavor create --flavorprofile fp.single.small --description 'single amphora, 1 vcpu, 512 ram, 5 disk' --enable --name single.small
-openstack loadbalancer flavor create --flavorprofile fp.single.medium --description 'single amphora, 2 vcpu, 1024 ram, 10 disk' --enable --name single.medium
-openstack loadbalancer flavor create --flavorprofile fp.single.large --description 'single amphora, 4 vcpu, 2048 ram, 20 disk' --enable --name single.large
+openstack loadbalancer flavor create --flavorprofile fp.single.small --description 'single amphora, 1 vcpu, 1024 ram, 8 disk' --enable --name single.small
+openstack loadbalancer flavor create --flavorprofile fp.single.medium --description 'single amphora, 2 vcpu, 2048 ram, 10 disk' --enable --name single.medium
+openstack loadbalancer flavor create --flavorprofile fp.single.large --description 'single amphora, 4 vcpu, 4096 ram, 20 disk' --enable --name single.large
 ```
 
 ACTIVE_STANDBY Mode
 ```
-openstack loadbalancer flavor create --flavorprofile fp.active_standby.small --description 'high-availability amphora, 1 vcpu, 512 ram, 5 disk' --enable --name active_standby.small
-openstack loadbalancer flavor create --flavorprofile fp.active_standby.medium --description 'high-availability amphora, 2 vcpu, 1024 ram, 10 disk' --enable --name active_standby.medium
-openstack loadbalancer flavor create --flavorprofile fp.active_standby.large --description 'high-availability amphora, 4 vcpu, 2048 ram, 20 disk' --enable --name active_standby.lage
+openstack loadbalancer flavor create --flavorprofile fp.active_standby.small --description 'high-availability amphora, 1 vcpu, 1024 ram, 8 disk' --enable --name active_standby.small
+openstack loadbalancer flavor create --flavorprofile fp.active_standby.medium --description 'high-availability amphora, 2 vcpu, 2048 ram, 10 disk' --enable --name active_standby.medium
+openstack loadbalancer flavor create --flavorprofile fp.active_standby.large --description 'high-availability amphora, 4 vcpu, 4096 ram, 20 disk' --enable --name active_standby.large
 ```
 
 ### Create Loadbalancer using flavor
